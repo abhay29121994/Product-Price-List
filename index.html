@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Selection</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title-container">
+        <div class="line"></div>
+        <h2 class="title-text">YAY! It's BOGO</h2>
+        <div class="line"></div>
+      </div>
+      <div class="box" id="box1" onclick="expandBox(1)">
+        <div class="inside-box">
+          <div class="left-section">
+            <div class="unit-info">
+              <input
+                type="radio"
+                name="product"
+                id="product1"
+                class="radio-button"
+              />
+
+              <span>1 Unit</span>
+              <span class="discount">10% off</span>
+            </div>
+          </div>
+          <div class="right-section">
+            <div class="price">10.00 USD</div>
+            <div class="strike-price">24 USD</div>
+          </div>
+        </div>
+        <div class="standard-price">Standard Price</div>
+
+        <div class="content" id="content1">
+          <div class="content-line content-line-first">
+            <p>Size</p>
+            <p>Colour</p>
+          </div>
+          <div class="content-line content-line-second">
+            <span>#1</span>
+            <select id="size" name="size">
+              <option value="S">S</option>
+              <option value="M">M</option>
+            </select>
+            <select id="colour" name="colour">
+              <option value="black">Black</option>
+              <option value="grey">Grey</option>
+            </select>
+          </div>
+          <div class="content-line content-line-third">
+            <span>#1</span>
+            <select id="size" name="size">
+              <option value="S">S</option>
+              <option value="M">M</option>
+            </select>
+            <select id="colour" name="colour">
+              <option value="black">Black</option>
+              <option value="grey">Grey</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Box 2 -->
+      <div class="box" id="box2" onclick="expandBox(2)">
+        <div class="most-popular">Most Popular</div>
+
+        <div class="inside-box">
+          <div class="left-section">
+            <div class="unit-info">
+              <input
+                type="radio"
+                name="product"
+                id="product1"
+                class="radio-button"
+              />
+
+              <span>2 Unit</span>
+              <span class="discount">20% off</span>
+            </div>
+          </div>
+          <div class="right-section">
+            <div class="price">18.00 USD</div>
+            <div class="strike-price">24 USD</div>
+          </div>
+        </div>
+        <div class="standard-price">Standard Price</div>
+
+        <div class="content" id="content1">
+          <div class="content-line content-line-first">
+            <p>Size</p>
+            <p>Colour</p>
+          </div>
+          <div class="content-line content-line-second">
+            <span>#1</span>
+            <select id="size" name="size">
+              <option value="S">S</option>
+              <option value="M">M</option>
+            </select>
+            <select id="colour" name="colour">
+              <option value="black">Black</option>
+              <option value="grey">Grey</option>
+            </select>
+          </div>
+          <div class="content-line content-line-third">
+            <span>#1</span>
+            <select id="size" name="size">
+              <option value="S">S</option>
+              <option value="M">M</option>
+            </select>
+            <select id="colour" name="colour">
+              <option value="black">Black</option>
+              <option value="grey">Grey</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Box 3 -->
+      <div class="box" id="box3" onclick="expandBox(3)">
+        <div class="inside-box">
+          <div class="left-section">
+            <div class="unit-info">
+              <input
+                type="radio"
+                name="product"
+                id="product1"
+                class="radio-button"
+              />
+            
+              <span>3 Unit</span>
+              <span class="discount">30% off</span>
+            </div>
+          </div>
+          <div class="right-section">
+            <div class="price">24.00 USD</div>
+            <div class="strike-price">24 USD</div>
+          </div>
+        </div>
+        <div class="standard-price">Standard Price</div>
+
+        <div class="content" id="content1">
+          <div class="content-line content-line-first">
+            <p>Size</p>
+            <p>Colour</p>
+          </div>
+          <div class="content-line content-line-second">
+            <span>#1</span>
+            <select id="size" name="size">
+              <option value="S">S</option>
+              <option value="M">M</option>
+            </select>
+            <select id="colour" name="colour">
+              <option value="black">Black</option>
+              <option value="grey">Grey</option>
+            </select>
+          </div>
+          <div class="content-line content-line-third">
+            <span>#1</span>
+            <select id="size" name="size">
+              <option value="S">S</option>
+              <option value="M">M</option>
+            </select>
+            <select id="colour" name="colour">
+              <option value="black">Black</option>
+              <option value="grey">Grey</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <p class="free">Free Delivery</p>
+        <p>Total : $18.00 USD</p>
+      </div>
+      <!--  Add to Cart Button -->
+      <button class="add-to-cart">+ Add to Cart</button>
+      <p class="footer-note"><i>@ Powered by Pumper</i></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
